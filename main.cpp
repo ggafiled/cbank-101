@@ -36,6 +36,29 @@ int getInput()
 	return _input;
 }
 
+bool checkAuth()
+{
+	char tmp[10], tmp1[10];
+	system("cls");
+	printf("##################### IDENTITY VERIFICATION #####################\n");
+	printf("Enter your Account ID : ");
+	scanf("%s", &tmp);
+	string id = tmp;
+	string pwd;
+	for (int i = 3; i >= 0; i--)
+	{
+		printf("__*Enter your Password : ");
+		scanf("%s", &tmp1);
+		pwd = tmp1;
+		if (pwd == "12345")
+		{
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+
 void addAccount()
 {
 	printf("*addAccount\n");
@@ -58,7 +81,12 @@ void listAccount()
 
 void actionDeposit()
 {
-	printf("*actionDeposit\n");
+	if (checkAuth())
+	{
+		printf("##################### DEPOSIT #####################\n");
+		printf("########## WELCOME : NATTAPOL KROBKLANG ###########\n");
+		getch();
+	}
 };
 
 void actionWithdraw()
