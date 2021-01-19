@@ -1,0 +1,26 @@
+[
+    {
+        "account_id": "0488705507",
+        "action_type": "DP",
+        "old_balance": 7000.50,
+        "amount": 200.00,
+        "net_amount": 7200.50,
+        "created_at": 1610878597
+    },
+    {
+        "account_id": "0487998001",
+        "action_type": "DP",
+        "old_balance": 0.00,
+        "amount": 1000.00,
+        "net_amount": 1000.00,
+        "created_at": 1610878597
+    },
+    {
+        "account_id": "0487998001",
+        "action_type": "WD",
+        "old_balance": 1000.00,
+        "amount": 500.00,
+        "net_amount": 500.00,
+        "created_at": 1610878920
+    }
+]
